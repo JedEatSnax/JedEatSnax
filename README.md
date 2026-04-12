@@ -1,4 +1,4 @@
-<h1 align="left">JedEatSnax, wannabe DevSecOps engineer</h1>
+<h1 align="center">JedEatSnax, wannabe DevSecOps engineer</h1>
 
 ###
 
