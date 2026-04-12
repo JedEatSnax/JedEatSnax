@@ -1,4 +1,6 @@
-<h1 align="center">JedEatSnax — self-hosting enthusiast, privacy and cybersecurity advocate</h1>
+<h1 align="center"> JedEatSnax </h1>
+
+<h3 align="center"> self-hosting enthusiast, privacy and cybersecurity advocate </h3>
 
 ###
 
