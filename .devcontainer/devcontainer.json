@@ -1,23 +1,28 @@
 {
     "name": "Template",
     "build": {
-    "dockerfile": "Containerfile"
+        "dockerfile": "Containerfile"
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/node:2": {}
     },
     "customizations": {
-        "extensions": [
-            "oxc.oxc-vscode",
-            "esbenp.prettier-vscode",
-            "eamodio.gitlens",
-            "streetsidesoftware.code-spell-checker",
-            "sonarqube.sonarlint-vscode"
-        ],
-        "settings": {
-            "editor.formatOnSave": true,
-            "editor.codeActionsOnSave": {
-                "source.fixAll.oxc": "always"
-            },
-            "oxc.typeAware": true
+        "vscode": {
+            "extensions": [
+                "oxc.oxc-vscode",
+                "esbenp.prettier-vscode",
+                "eamodio.gitlens",
+                "streetsidesoftware.code-spell-checker",
+                "sonarqube.sonarlint-vscode"
+            ],
+            "settings": {
+                "editor.formatOnSave": true,
+                "editor.codeActionsOnSave": {
+                    "source.fixAll.oxc": "always"
+                },
+                "oxc.typeAware": true
+            }
         }
     },
-    "postCreateCommand": "npm install -g pnpm@latest && bash .devcontainer/git.sh"
+    "postCreateCommand": "bash .devcontainer/git.sh"
 }
