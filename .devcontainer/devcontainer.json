@@ -4,7 +4,11 @@
         "dockerfile": "Containerfile"
     },
     "features": {
-        "ghcr.io/devcontainers/features/node:2": {}
+        "ghcr.io/devcontainers/features/node:2": {},
+        "ghcr.io/devcontainers/features/github-cli:1": {}
+    },
+    "containerEnv": {
+        "GH_TOKEN": "${localEnv:GH_TOKEN}"
     },
     "customizations": {
         "vscode": {
